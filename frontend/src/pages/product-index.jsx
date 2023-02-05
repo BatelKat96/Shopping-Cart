@@ -14,7 +14,6 @@ export function ProductIndex() {
 
 	function onAddToCart(id) {
 		console.log('id:', id)
-
 	}
 
 	return <section>
