@@ -17,7 +17,7 @@ export function ProductIndex() {
 		addToCart(product)
 	}
 
-	return <section>
+	return <section >
 		<h1>Our Products</h1>
 
 		<ProductsList
