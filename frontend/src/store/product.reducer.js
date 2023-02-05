@@ -1,4 +1,5 @@
 export const SET_PRODUCTS = 'SET_PRODUCTS'
+export const SET_CART = 'SET_CART'
 export const ADD_TO_CART = 'ADD_TO_CART'
 export const CLEAR_CART = 'CLEAR_CART'
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART'
@@ -17,6 +18,9 @@ export function productReducer(state = initialState, action) {
 			newState = { ...state, products: action.products }
 			break
 
+		case SET_CART:
+			newState = { ...state, cart: action.cart }
+			break
 		case ADD_TO_CART:
 			newState = { ...state, cart: [...state.cart, action.product] }
 			break
