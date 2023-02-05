@@ -38,3 +38,9 @@
 .portrait-ratio {
     @include aspect-ratio(9, 16);
 }
+
+// list helpers
+.clean-list {
+    list-style-type:none;
+    margin: 0;
+}
