@@ -1,5 +1,4 @@
-import { carService } from '../services/car.service.local.js'
-import { userService } from '../services/user.service.js'
+import { productService } from '../services/product.service'
 import { store } from './store.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import {
@@ -8,11 +7,10 @@ import {
 	REMOVE_FROM_CART,
 	SET_PRODUCTS,
 } from './product.reducer.js'
-import { SET_SCORE } from './user.reducer.js'
 
 export async function loadProducts() {
 	try {
-		const products = await carService.query()
+		const products = await productService.query()
 		console.log('Products from DB:', products)
 		store.dispatch({
 			type: SET_PRODUCTS,
@@ -36,16 +34,4 @@ export function removeFromCart(productId) {
 		type: REMOVE_FROM_CART,
 		productId,
 	})
-}
-
-export async function checkout(total) {
-	try {
-		const score = await userService.changeScore(-total)
-		store.dispatch({ type: SET_SCORE, score })
-		store.dispatch({ type: CLEAR_CART })
-		return score
-	} catch (err) {
-		console.log('CarActions: err in checkout', err)
-		throw err
-	}
 }

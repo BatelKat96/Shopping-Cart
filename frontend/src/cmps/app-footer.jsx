@@ -3,21 +3,19 @@ import { useSelector } from 'react-redux'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 
 import { removeFromCart, checkout } from '../store/product.actions'
-import { UserMsg } from './user-msg.jsx'
 
 export function AppFooter() {
 	const [isCartShown, setIsCartShown] = useState(false)
-	const cart = useSelector((storeState) => storeState.carModule.cart)
-	const count = useSelector((storeState) => storeState.userModule.count)
+	const cart = useSelector((storeState) => storeState.productModule.cart)
 	const cartTotal = cart.reduce((acc, car) => acc + car.price, 0)
 
 	async function onCheckout() {
-		try {
-			const score = await checkout(cartTotal)
-			showSuccessMsg(`Charged, your new score: ${score.toLocaleString()}`)
-		} catch (err) {
-			showErrorMsg('Cannot checkout')
-		}
+		// try {
+		// 	const score = await checkout(cartTotal)
+		// 	showSuccessMsg(`Charged, your new score: ${score.toLocaleString()}`)
+		// } catch (err) {
+		// 	showErrorMsg('Cannot checkout')
+		// }
 	}
 
 	return (
@@ -59,7 +57,6 @@ export function AppFooter() {
 					<button onClick={onCheckout}>Checkout</button>
 				</section>
 			)}
-			<UserMsg />
 		</footer>
 	)
 }
