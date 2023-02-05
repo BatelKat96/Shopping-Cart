@@ -1,6 +1,14 @@
-.app-header {
+.app-header-section {
+
     background-color: $clr4;
-    padding: 10px;
+}
+
+.app-header {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding-block: 10px;
 
 
     .user-info {
@@ -31,7 +39,7 @@
 
     nav {
         font-size: .8em;
-        background-color: $clr5;
+        // background-color: $clr5;
         padding: 5px;
 
     }
@@ -41,13 +49,17 @@
     }
 
     nav a:not(:first-child) {
-        border-top: 1px solid $clr1;
+        // border-top: 1px solid $clr1;
         padding: 0 5px;
         margin: 10px;
     }
 
     nav .active {
         color: $clr1;
+    }
+
+    h1 {
+        margin-bottom: 0;
     }
 
 }

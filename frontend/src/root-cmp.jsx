@@ -8,9 +8,9 @@ import { ShoppingCart } from './pages/cart'
 
 export function RootCmp() {
 	return (
-		<div>
+		<div >
 			<AppHeader />
-			<main>
+			<main className='main-container'>
 				<Routes>
 					<Route path="/" element={<ProductIndex />} />
 					<Route path="/cart" element={<ShoppingCart />} />
