@@ -23,6 +23,8 @@ export async function loadProducts() {
 }
 
 export function addToCart(product) {
+	console.log('product from action:', product)
+
 	store.dispatch({
 		type: ADD_TO_CART,
 		product,

@@ -1,38 +1,109 @@
 [
   {
-    "productName": "Colors Cards",
-    "price": 17,
-    "imgUrl": "cards.jpg",
-    "_id": "p101"
+    "_id": "p101",
+    "productName": "iPhone 9",
+    "price": 549,
+    "imgUrl": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
   },
   {
-    "productName": "Frozen Pazzle",
-    "price": 23,
-    "imgUrl": "frozen.jpg",
-    "_id": "p102"
+    "_id": "p102",
+    "productName": "iPhone X",
+    "price": 899,
+    "imgUrl": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
   },
   {
-    "productName": "Race Car",
-    "price": 25,
-    "imgUrl": "car.jpg",
-    "_id": "p103"
+    "_id": "p103",
+    "productName": "Samsung Universe 9",
+    "price": 1249,
+    "imgUrl": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
   },
   {
-    "productName": "Talking Doll",
+    "_id": "p104",
+    "productName": "OPPOF19",
+    "price": 280,
+    "imgUrl": "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+  },
+  {
+    "_id": "p105",
+    "productName": "Huawei P30",
+    "price": 499,
+    "imgUrl": "https://i.dummyjson.com/data/products/5/thumbnail.jpg"
+  },
+  {
+    "_id": "p106",
+    "productName": "MacBook Pro",
+    "price": 1749,
+    "imgUrl": "https://i.dummyjson.com/data/products/6/thumbnail.png"
+  },
+  {
+    "_id": "p107",
+    "productName": "Samsung Galaxy Book",
+    "price": 1499,
+    "imgUrl": "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+  },
+  {
+    "_id": "p108",
+    "productName": "Microsoft Surface Laptop 4",
+    "price": 1499,
+    "imgUrl": "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+  },
+  {
+    "_id": "p109",
+    "productName": "Infinix INBOOK",
+    "price": 1099,
+    "imgUrl": "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+  },
+  {
+    "_id": "p110",
+    "price": 1099,
+    "imgUrl": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+  },
+  {
+    "_id": "p111",
+    "productName": "perfume Oil",
+    "price": 13,
+    "imgUrl": "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+  },
+  {
+    "_id": "p112",
+    "productName": "Brown Perfume",
+    "price": 40,
+    "imgUrl": "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+  },
+  {
+    "_id": "p113",
+    "productName": "Fog Scent Xpressio Perfume",
+    "price": 13,
+    "imgUrl": "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+  },
+  {
+    "_id": "p114",
+    "productName": "Non-Alcoholic Concentrated Perfume Oil",
+    "price": 120,
+    "imgUrl": "https://i.dummyjson.com/data/products/14/thumbnail.jpg"
+  },
+  {
+    "_id": "p115",
+    "productName": "Eau De Perfume Spray",
     "price": 30,
-    "imgUrl": "doll.jpg",
-    "_id": "p104"
+    "imgUrl": "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
   },
   {
-    "productName": "Bimba",
-    "price": 35,
-    "imgUrl": "bimba.jpeg",
-    "_id": "p105"
+    "_id": "p116",
+    "productName": "Hyaluronic Acid Serum",
+    "price": 19,
+    "imgUrl": "https://i.dummyjson.com/data/products/16/thumbnail.jpg"
   },
   {
-    "productName": "Furby",
-    "price": 28,
-    "imgUrl": "furby.jpg",
-    "_id": "p106"
+    "_id": "p117",
+    "productName": "Tree Oil 30ml",
+    "price": 12,
+    "imgUrl": "https://i.dummyjson.com/data/products/17/thumbnail.jpg"
+  },
+  {
+    "_id": "p118",
+    "productName": "Oil Free Moisturizer 100ml",
+    "price": 40,
+    "imgUrl": "https://i.dummyjson.com/data/products/18/thumbnail.jpg"
   }
 ]
