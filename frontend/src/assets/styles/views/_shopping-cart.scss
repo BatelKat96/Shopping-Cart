@@ -1,0 +1,106 @@
+.shopping-cart {
+
+    ul.shopping-cart-items {
+        display: grid;
+        gap:8px;
+        grid-template-columns: repeat(3, 1fr);
+        
+        li.list-header {
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: inherit;
+            text-align: center;
+            border-bottom: 2px solid gray;
+
+            .header-product{
+                grid-column: 1/3;
+            }
+			.header-price {
+                grid-column: 3/4;
+            }
+        }
+
+        li.shopping-cart-item {
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: inherit;
+            border-bottom: 2px solid gray;
+
+            .product-img {
+                grid-column: 1/2;
+                img {
+                    max-height: 150px;
+                    object-fit: contain;
+                }
+            }
+
+            .product-name {
+                grid-column: 2/3;
+                align-self: center;
+            }
+
+            .product-price {
+                grid-column: 3/4;
+                text-align: center;
+                align-self: center;
+            }
+
+        }
+
+        .products-total {
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: inherit;
+            p {
+                grid-column: 3/4;
+                text-align: center;
+            }
+        }
+    }
+
+    
+    
+
+    table {
+        border: 1px solid black;
+        direction: ltr;
+
+        thead {
+            border: 1px solid black;
+
+            th {
+                border: 1px solid black;
+            }
+        }
+
+        tbody {
+            border: 1px solid black;
+
+            tr {
+                border: 1px solid black;
+                td {
+                    border: 1px solid black;
+
+                    &.product-img {
+                        img {
+                            max-height: 150px;
+                            object-fit: contain;
+                        }
+
+                    }
+
+                    &.product-name {
+                        min-width: 4rem;
+
+                    }
+
+                    &.product-price {
+
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
