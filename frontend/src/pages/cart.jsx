@@ -1,5 +1,3 @@
-import { computeHeadingLevel } from '@testing-library/react'
-
 export function ShoppingCart() {
 	const addedProducts = [
 		{
@@ -38,7 +36,7 @@ export function ShoppingCart() {
 
 	return (
 		<section className="shopping-cart">
-			<h1>MY Shopping Cart</h1>
+			<h1>My Shopping Cart</h1>
 			<div className="shopping-cart-items-container">
 				<ul className="clean-list shopping-cart-items">
 					<li key="list-header" className="list-header">
