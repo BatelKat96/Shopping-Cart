@@ -1,9 +1,15 @@
+import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+import { loadCart } from '../store/product.actions'
 
 export function AppHeader() {
 	const cart = useSelector((storeState) => storeState.productModule.cart)
 	const totalItems = cart.length
+
+	useEffect(() => {
+		loadCart()
+	}, [])
 
 	return (
 		<header className="app-header-section main-container">
