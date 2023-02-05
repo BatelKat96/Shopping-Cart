@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { ProductsList } from '../cmps/product-list';
 import { productService } from '../services/product.service';
-import { loadProducts } from '../store/product.actions';
+import { addToCart, loadProducts } from '../store/product.actions';
 
 export function ProductIndex() {
 
@@ -12,8 +12,9 @@ export function ProductIndex() {
 	}, [])
 
 
-	function onAddToCart(id) {
-		console.log('id:', id)
+	function onAddToCart(product) {
+		console.log('product:', product)
+		addToCart(product)
 	}
 
 	return <section>
