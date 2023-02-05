@@ -4,10 +4,13 @@ import { utilService } from './util.service.js'
 import data from '../data/product.json'
 
 const STORAGE_KEY = 'product'
+const STORAGE_KEY_CART = 'cart'
 
 export const productService = {
 	query,
 	getById,
+	addToCart,
+	queryCart,
 }
 window.cs = productService
 
@@ -32,4 +35,15 @@ function getById(productId) {
 	// return httpService.get(`product/${productId}`)
 }
 
+// Cart functions
+async function queryCart() {
+	var cart = await storageService.query(STORAGE_KEY_CART)
+	if (!cart || !cart.length) cart = []
+	utilService.saveToStorage(STORAGE_KEY_CART, cart)
+	return cart
+	// return httpService.get(STORAGE_KEY, filterBy)
+}
 
+function addToCart(product) {
+	return storageService.post(STORAGE_KEY_CART, product)
+}
