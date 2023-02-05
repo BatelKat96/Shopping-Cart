@@ -9,7 +9,7 @@
     ],
     "createdAt": "1631031801022",
     "imgUrl": "cards.jpg",
-  "msgs":[]
+    "msgs": []
   },
   {
     "toyName": "Frozen Pazzle",
@@ -21,7 +21,7 @@
     ],
     "createdAt": "1631031801222",
     "imgUrl": "frozen.jpg",
-    "msgs":[]
+    "msgs": []
   },
   {
     "toyName": "Race Car",
@@ -33,7 +33,7 @@
     ],
     "createdAt": "1631031801001",
     "imgUrl": "car.jpg",
-    "msgs":[]
+    "msgs": []
   },
   {
     "toyName": "Talking Doll",
@@ -45,7 +45,7 @@
     ],
     "createdAt": "1631031801011",
     "imgUrl": "doll.jpg",
-    "msgs":[]
+    "msgs": []
   },
   {
     "toyName": "Bimba",
@@ -57,6 +57,18 @@
     ],
     "createdAt": "1631031801300",
     "imgUrl": "bimba.jpeg",
-    "msgs":[]
+    "msgs": []
+  },
+  {
+    "toyName": "Bimba",
+    "price": 35,
+    "inStock": false,
+    "labels": [
+      "Baby",
+      "Outdoor"
+    ],
+    "createdAt": "1631031801300",
+    "imgUrl": "bimba.jpeg",
+    "msgs": []
   }
 ]
