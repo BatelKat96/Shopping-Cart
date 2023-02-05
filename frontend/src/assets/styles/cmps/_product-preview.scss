@@ -1,6 +1,9 @@
 .products-preview-section {
     text-align: center;
     padding-top:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &:hover {
         background-color: $clr4;
@@ -10,15 +13,6 @@
     img {
         max-height: 100px;
         object-fit: contain;
-    }
-
-    button {
-        &:hover {
-            background-color: #244c59;
-        }
-        
-        &:active {
-            background-color: #152D35;
-        }
+        margin: 4px 0;
     }
 }

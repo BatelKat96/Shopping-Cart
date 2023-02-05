@@ -55,6 +55,7 @@
   },
   {
     "_id": "p110",
+    "productName": "Cool Gamers Computer with SWAG",
     "price": 1099,
     "imgUrl": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
   },

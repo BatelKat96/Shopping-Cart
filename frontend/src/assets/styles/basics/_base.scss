@@ -62,3 +62,20 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+button {
+    border:0;
+    background-color: $clr1;
+    color:whitesmoke;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+        background-color: $clr2;
+    }
+        
+    &:active {
+        background-color: $clr1;
+    }
+}
