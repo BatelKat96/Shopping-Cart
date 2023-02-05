@@ -5,6 +5,10 @@ import data from '../data/product.json'
 
 const STORAGE_KEY = 'product'
 const STORAGE_KEY_CART = 'cart'
+const PAGE_SIZE = 6
+
+let gPageIdx = 0
+
 
 export const productService = {
 	query,
@@ -26,9 +30,26 @@ async function query() {
 	// if (filterBy.price) {
 	//     cars = cars.filter(car => car.price <= filterBy.price)
 	// }
+	// const startIdx = gPageIdx * PAGE_SIZE
+	// return products.slice(startIdx, startIdx + PAGE_SIZE)
 	return products
 	// return httpService.get(STORAGE_KEY, filterBy)
 }
+
+// function movePage(diff) {
+//     if (diff<0) {
+//         gPageIdx--
+//         if (gPageIdx * PAGE_SIZE <= gBooks.length) {
+//             gPageIdx = 0
+//         }
+//     }
+//     else {
+//         gPageIdx++
+//         if (gPageIdx * PAGE_SIZE >= gBooks.length) {
+//             gPageIdx = Math.ceil(gBooks.length / PAGE_SIZE) - 1
+//         }
+//     }
+// }
 
 function getById(productId) {
 	return storageService.get(STORAGE_KEY, productId)
