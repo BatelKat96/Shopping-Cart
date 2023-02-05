@@ -5,12 +5,14 @@ import { AppHeader } from './cmps/app-header'
 import { AppFooter } from './cmps/app-footer'
 import { ProductIndex } from './pages/product-index'
 import { ShoppingCart } from './pages/cart'
+import { UserMsg } from './cmps/user-msg'
 
 export function RootCmp() {
 	return (
-		<div >
+		<div>
 			<AppHeader />
-			<main className='main-container'>
+			<UserMsg />
+			<main className="main-container">
 				<Routes>
 					<Route path="/" element={<ProductIndex />} />
 					<Route path="/cart" element={<ShoppingCart />} />
