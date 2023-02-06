@@ -14,7 +14,7 @@ export function AppHeader() {
 	return (
 		<header className="app-header-section main-container">
 			<div className="app-header  main-container ">
-				<h1>Everything and More...</h1>
+				<h1>Everything & More...</h1>
 				<nav>
 					<NavLink to="/">Products</NavLink>
 					<NavLink to="/cart">Shopping Cart ({totalItems})</NavLink>
